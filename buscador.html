@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8" >
+    <title> Buscador - Enciclopedia Médica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="index.html#Temas_destacados"><i class="fas fa-star"></i> Temas Destacados</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="buscador.html"><i class="fas fa-search"></i> Buscador</a></li>
+            </ul>
+        </nav>
+
+
+
+        <a href="index.html">
+            <img src="logo.png" alt="Logo de la enciclopedia medica" width="200">
+        </a>
+
+         
+        <h1>Enciclopedia Médica</h1>
+        <nav>
+            
+               <p> Estás en: <a href="index.html">Página Principal</a> > Formulario de búsqueda </p> 
+            
+        </nav>
+    
+   </header> 
+    
+   <hr> 
+
+        <h2>Panel de búsqueda</h2>
+
+        <p>Todos aquellos campos marcados (*) requieren de informacion obligatoria</p>
+
+    <form action="confirmacion_busqueda.html">
+        <fieldset>
+        <p><label for="descripcion">Descripcion(*)</label> 
+            <textarea rows="4" cols="60" name="descripcion" id="descripcion" required></textarea>
+        </p> 
+       
+        <p><label for="causas">Causas</label>
+            <textarea rows="4" cols="60" name="causas" id="causas"></textarea>
+        </p>
+
+        <p><label for="sintomas">Síntomas</label>
+            <textarea rows="4" cols="60" name="sintomas" id="sintomas"></textarea>
+        </p>
+
+        <p><label for="pruebas_y_examenes">Pruebas y exámenes</label>
+            <textarea rows="4" cols="60" name="pruebas_y_examenes" id="pruebas_y_examenes"></textarea>
+        </p>
+
+        <p><label for="tratamiento">Tratamiento</label>
+            <textarea rows="4" cols="60" name="tratamiento" id="tratamiento"></textarea>
+        </p>
+
+        <p><label for="expectativas">Expectativas</label>
+            <textarea rows="4" cols="60" name="expectativas" id="expectativas"></textarea>
+        </p>
+
+    </fieldset>
+
+    <input type="submit" value="Buscar en la enciclopedia">
+    <input type="reset" value="Resetear formulario">
+
+</form>
+
+<hr>
+
+<footer>
+    <p>Enciclopedia Médica 2024 | Creado por Pablo Pérez Avilés y Esther Adeyemi Adeyemi</p>
+</footer>
+
+</body>
+
+</html>

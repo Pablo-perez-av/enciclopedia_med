@@ -1,0 +1,220 @@
+/* Variables CSS para cambiar los colores */
+:root {
+    --color-principal: #004d99;
+    --color-cont: #f9f9f9;
+    --hover-color: #437cb5;
+    --footer-header-color: #a2c9f0;
+    --text-color: white;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--color-cont);
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--footer-header-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+main {
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    background-color: var(--color-cont); 
+}
+
+/* Barra de índice horizontal */
+.indice-horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap; 
+}
+
+.indice-horizontal li {
+    list-style: none;
+}
+
+.indice-horizontal a {
+    display: block;
+    padding: 10px;
+    background-color: var(--color-principal);
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100px;
+    margin: 5px; /* Margen uniforme */
+}
+
+.indice-horizontal a:hover {
+    background-color: var(--hover-color);
+}
+
+/* Estilos para imágenes */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 4%;
+
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; 
+}
+
+th {
+    background-color: var(--color-principal);
+    color: var(--text-color);
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: var(--color-principal);
+}
+
+a:hover {
+    background-color: var(--hover-color); 
+    color: white;
+}
+
+
+/* Hover en el logo */
+header a img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Títulos y líneas */
+h2 {
+    color: var(--color-principal);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Estilo de área activa en los mapas */
+area {
+    outline: none;
+}
+
+area:focus {
+    outline: 2px solid var(--color-principal);
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+    .indice-horizontal {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .indice-horizontal a {
+        width: auto; 
+        margin-bottom: 10px; 
+    }
+
+    header, footer {
+        padding: 20px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .navbar, footer .navbar {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navbar ul li {
+        margin: 5px 0; 
+    }
+
+    .navbar ul li a {
+        font-size: 14px; 
+    }
+}
+
+/* Estilos para la barra de navegación */
+.navbar, footer .navbar {
+    width: 100%;
+    background-color: #004d99;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar ul, footer .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li, footer .navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a, footer .navbar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar ul li a i, footer .navbar ul li a i {
+    margin-right: 5px;
+}
+
+footer .navbar {
+    background-color: #003366; 
+}

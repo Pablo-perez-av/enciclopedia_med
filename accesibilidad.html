@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidad de Accesibilidad Digital - Enciclopedia Médica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="index.html#Temas_destacados"><i class="fas fa-star"></i> Temas Destacados</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="buscador.html"><i class="fas fa-search"></i> Buscador</a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="logo.png" alt="Logo de la enciclopedia medica" width="200"></a>
+        <h1>Enciclopedia Médica</h1>
+        <p>Estas en: <a href="index.html">Página Principal</a> > Declaracion de Accesibilidad</p>
+
+        <h2> Unidad de Accesibilidad Digital  </h2>
+    </header>
+    <main>
+
+        <h2>Índice</h2>
+        <ul class="indice-horizontal">
+            <li><a href="#Introduccion">Introduccion a la Accesibilidad </a></li>
+            <li><a href="#Declaracion">Declaracion</a></li>
+            <li><a href="#Objetivos">Objetivos</a></li>
+
+        </ul>
+        
+        <h2 id="Introduccion"> Introducción a la Accesibilidad Digital  </h2>
+        <p>La accesibilidad es el grado en el que todas las personas pueden percibir, comprender y navegar por la 
+            información contenida en un documento digital independientemente de sus capacidades técnicas, 
+            cognitivas o físicas.</p>
+        <h2 id="Declaracion"> Declaracion de Accesibilidad </h2>
+        <p> Nuestra enciclopedia se ha comprometido a hacer accesibles sus sitios web y sus aplicaciones para dispositivos móviles, de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público,
+            y siguiendo las pautas de accesibilidad para el contenido web, en inglés <abbr title="Web Content Accesibility Guidelines" lang="en">WCAG</abbr>.
+            </p>
+
+        <p> Explicaciones sobre el contenido accesible.</p>
+        <ul>
+            <li id="Objetivos"> <strong>Identificacion de idioma:</strong> Se ha empleado como idioma principal el Español de España,
+                no obstante, en ciertos articulos escritos en inglés, se ha especificado el idioma de referencia en dicho apartado
+                cumpliendo con el primer nivel del criterio 3.1.1 Language of page
+            </li> <br>
+            <li>
+                <strong>Etiquetado Semántico: </strong> En relacion al criterio de primer nivel 2.5.3 Label in name 
+                En todos los textos o imágenes de texto, el nombre contiene el texto que se presenta visualmente.
+                Ademas permite describir el contenido, su significado y la relación que guarda un dato descrito en un elemento con otros.
+            </li> <br>
+
+            <li><strong>Texto Alternativo en imagenes:</strong> En este caso hemos proporcionado un texto 
+                descriptivo breve para todas aquellas imagenes que esencialmente, 
+                poseen un significado para la pagina web, cumpliendo el Criterio de Conformidad 1.1.1 Contenido no textual.
+                En este caso toda imagen o contenido no textual que proporcione informacion de vital importancia ha sido agregada.
+                En aquellos casos donde la el contenido es meramente decorativo, se ha especificado con anterioridad o se ha obviado implementarle un texto alternativo.
+
+            </li> <br>
+            <li><strong>Mecanismos de Navegación: </strong> En la web existen varios tipos de navegacion, en este caso, en la pagina principal, proveemos de un índice con un mapa del sitio web
+                , que permite conocer todas las paginas anidadas, ordenadas por apartados con su respectiva referencia de hiperenlace.
+                Por otro lado, para mejorar la navegacion, hemos provisto a cada pagina una linea de código a modo de Migas de Pan, estas permiten darle 
+                informacion adicional al usuario de que ruta ha seguido para llegar hasta dicha pagina, y la posibilidad de volver a cualquiera de las 
+                páginas anteriores a la que se encuentre.
+            </li> <br>
+            <li><strong>Características Accesibles implementadas: </strong>
+                <ul>
+                    <li> Marcadores de puntero: En ciertas paginas hemos proporcionado marcadores de puntero para indicar zonas sensibles de la pagina web.</li>
+                    <li> Definicion de enlaces: Se ha proporcionado una breve descripcion de los enclaces para facilitar su comprension a la hora de buscar informacion.</li>
+                    <li> Definicion de imagenes: En todas las imagenes que proporcionan informacion o poseen zonas sensibles, se ha proporcionado descripciones breves, tanto al situar el puntero encima (sin clickas) como 
+                        para desplazarse con el tabulador al rededor de la pagina.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>Volver a la <a href="accesibilidad.html">parte de arriba</a></p>
+        <p> Volver al <a href ="index.html">menú principal</a></p>
+        <p>Enciclopedia Médica 2024 | Creado por Pablo Pérez Avilés y Esther Adeyemi Adeyemi</p>
+    </footer>
+</body>
+</html>

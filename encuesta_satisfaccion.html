@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+    <meta charset="utf-8">
+    <title>Satisfacción Estadístico - Enciclopedia Médica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="index.html#Temas_destacados"><i class="fas fa-star"></i> Temas Destacados</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="buscador.html"><i class="fas fa-search"></i> Buscador</a></li>
+                </ul>
+            </nav>
+
+
+
+
+            <a href="index.html">
+                <img src="logo.png" alt="logo de la enciclopedia medica" width="200">
+            </a>
+            <h1> Encuesta de Usuarios</h1>
+            <p>Estás en: ><a href="index.html">Página principal</a> > Encuesta de satisfacción</p>
+            
+        </header>
+        <main>
+            <p>Todos aquellos campos marcados (*) requieren de informacion obligatoria</p>
+
+            <fieldset id="forms">
+                <form action="confirmacion_encuesta.html" method="post">
+                Datos del encuestado:
+                <fieldset class="centrado">
+                    <legend>Identificacion</legend>
+                    <label for="nombre"> Nombre (*) </label>
+                    <input type="text" name="nombre" id="nombre"
+                    required autocomplete="additional-name">  
+                    <label for="apellido"> Apellido (*)</label>
+                    <input type="text" name="apellido" id="apellido"
+                    required autocomplete="additional-name">  
+                    <label for="sexo"> Sexo (*)</label>
+                    <select name="sexo" id="sexo">
+                        <option value="hombre">hombre</option>
+                        <option value="mujer">mujer</option>
+                        <option value="otro">otro</option>
+                    </select>
+                    <label for="edad"> Edad (*)</label>
+                    <input type="number" name="edad" id="edad" min="1" max="110" value="25">
+                    <label for="peso"> Peso en Kg (*)</label>
+                    <input type="number" name="peso" id="peso" min="5" max="300" step="5">
+                </fieldset>
+
+
+                <fieldset class="centrado">
+                    <legend>Localización</legend>
+                    <p> A continuacion introduzca fecha y lugar desde donde realiza la encuesta: </p>
+                    <label for="hora_enviada">Fecha Local</label>
+                    <input type="datetime-local" name="hora_enviada" id="hora_enviada">
+                
+                    
+                    <label for="nacionalidad">País actual:</label>
+                    <select name="nacionalidad" id="nacionalidad">
+                        <option value="España">España</option>
+                        <option value="Mejico">México</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                    </select>
+                </fieldset>
+
+                <p> 
+                    <label for="motivacion">¿Por qué razón has visitado esta página web? </label>
+                    <textarea name="motivacion" id="motivacion" cols="40"></textarea> <br>
+                    
+                </p> 
+
+                <fieldset class="centrado">
+                    <legend>Nivel de satisfaccion de la informacion</legend> 
+                    <p>Siendo 0=Nada, 1=Poco, 2=Suficiente,  3=Imparcial, 4=Aceptable y 5=Bueno
+                    </p>
+                    <label for="satisfaccion"> Nivel de satisfacción </label>
+                    <input type="range" name="satisfaccion" id="satisfaccion" min="0" max="5">
+                </fieldset>
+
+                <p> Si desea recibir los resultados actualizados de la encuesta rellene alguno de los datos opcionales a continuación:</p>
+                    <fieldset class="centrado">
+                        <legend>Formas de contacto</legend>
+                        <p class="mail icon"></p>
+                        <p><label for="email"> Email </label></p>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com"> <br>
+                        <br>
+                        <label for="telf" class="mobile icon"></label>
+                        <p><label for="telf">Teléfono</label></p>
+                        <input type="tel" name="telf" id="telf" placeholder="+34 650 55 37 39" pattern="[0-9]{2} [0-9]{9}">
+                    
+                    </fieldset>
+                
+                <p>Que crees que deberíamos mejorar!</p>
+                <fieldset class="centrado">
+                    <legend> Ayúdanos! </legend>
+                    <label for="color">¿Cambio de estética?, ¿Que color nos recomiendas?</label> 
+                    <input type="color" id="color" name="color"> <br>
+                    <label>Sobre la información del sitio web</label>
+                    <fieldset>
+                        <label for="articulos">¿Más cantidad de articulos?</label>
+                        <input type="checkbox" id="articulos">
+                        <label for="actualizacion">¿Actualización semanal?</label>
+                        <input type="checkbox" id="actualizacion">
+                        <label for="semanas">¿Cada cuantas horas?</label>
+                        <input type="number" id="semanas" step="2" title="Cada" min="0" value="2">
+                    </fieldset>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Enviar" >
+                <input type="reset" value="Reset">
+                </form>
+            </fieldset>
+        </main>
+        <footer>
+            <p class="volver"><a href="index.html"> Volver al Menú principal</a></p>
+            <p>Enciclopedia Médica 2024 | Creado por Pablo Pérez Avilés y Esther Adeyemi Adeyemi</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto - Enciclopedia Médica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="index.html#Temas_destacados"><i class="fas fa-star"></i> Temas Destacados</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="buscador.html"><i class="fas fa-search"></i> Buscador</a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <a href="index.html">
+            <img src="logo.png" alt="Logo de la enciclopedia medica" width="200">
+        </a>
+        <h1>Enciclopedia Médica</h1>
+        <nav>
+            <p>Estás en: <a href="index.html">Página Principal</a> > Formulario de contacto</p>
+        </nav>
+
+        <hr>
+
+        <h2>Contacto</h2>
+    </header>
+
+    <main>
+        <p>Todos aquellos campos marcados (*) requieren de información obligatoria</p>
+
+        <form action="respuesta_contacto.html" method="post">
+            <label for="asunto"><i class="fas fa-tag"></i> Asunto:(*)</label>
+            <input type="text" id="asunto" name="asunto" required><br><br>
+
+            <label for="comentario"><i class="fas fa-comments"></i> Comentario o pregunta:(*)</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="identidad"><i class="fas fa-user"></i> Yo soy:</label>
+            <select id="identidad" name="identidad">
+                <option value="paciente">Paciente</option>
+                <option value="cientifico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select><br><br>
+
+            <label for="fecha"><i class="fas fa-calendar-alt"></i> Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <fieldset>
+                <legend><i class="fas fa-venus-mars"></i> Sexo:</legend>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label><br><br>
+            </fieldset>
+
+            <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:(*)</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="checkbox" id="info" name="info">
+            <label for="info"><i class="fas fa-info-circle"></i> Deseo recibir más información</label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>Enciclopedia Médica 2024 | Creado por Pablo Pérez Avilés y Esther Adeyemi Adeyemi</p>
+    </footer>
+</body>
+</html>
